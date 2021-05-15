@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SuccedRegisterController!{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color: #0e3457; 
+        color: white;
+    }
+    .example-wrapper {
+        width: 80vw;
+        height: 40vh;
+        background-color: #6a8ac5;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 28vh;
+    }
+    img {
+        margin-top: 2vh;
+        margin-left: 17vw;
+    }
+    h1 {
+        width:100%;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    a {
+        position:relative;
+        font-size: 3vh;
+        left: 32vw;
+        color: white;
+    }
+</style>
+
+<div class="example-wrapper">
+    <img src="images/esailor.png">
+    <h1>Votre entreprise a bien été inscrite</h1>
+    <a href="/">Pour continuer cliquer ici</a>
+</div>
+{% endblock %}

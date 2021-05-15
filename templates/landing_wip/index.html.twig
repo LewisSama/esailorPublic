@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ESailor- SITE EN CONSTRUCTION{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/test.css">
+
+    <link rel="stylesheet" href="css/landingWIP.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block body %}
+    <div id="WIP">
+    </div>
+    <div class="WIP__text">
+        <p class="WIP__title">BIENTÔT</p>
+        <p class="WIP__description">Notre site prend le large très prochainement !</p>
+        <a class="goToRegister" href="/inscription">Cliquez ici pour inscrire votre entreprise</a>
+    </div>
+    <div id="exemple">
+        <img class="esailor__logo" src="/images/esailor.png">
+    
+
+        <p class="description1">LA NOUVELLE FAÇON DE NAVIGUER SUR LE WEB </p>
+        <form action="" id="header_search">
+            <img id="header__searchIcon" src="images/searchIcon.png">
+            <input placeholder="Search..." id="WIPsearch" type="text">
+        </form>
+
+        <div class="card">
+            <p class="description1 description2">UN MOTEUR DE RECHERCHE SURPUISSANT SURPUISSANT</p> 
+            <p class="description1 description2">RECHERCHEZ UN NOM, UN LIEU, UN HASTHAG</p>
+            <div class="optionmenu">
+                <div class="changed optionMenu___Justice"></div>
+                <div class="changed optionMenu___Habitation"></div>
+                <div class="changed optionMenu___Santé"></div>
+                <img  src="images/optionmenu.png">
+                <p class="description1 description2">DES CLASSIFICATIONS SIMPLES ET PRATIQUES</p>
+            </div>
+            <article  id="article1"onclick="hideOnClick(1)" class="entreprise">
+                <div class="entreprise__status"></div>
+                <img class="logoEntreprise" src="images/logoLifeInvader.png">
+                <h1 class="nomEntreprise">LifeInvader</h1>
+                <h2 class="typeEntreprise">Media & social</h2>
+                <p class="motCleEntreprise"><span>MOTS CLES:</span><span class="motcleEntrepriseChanged">Media, information, réseau social</span>
+                    
+                </p>
+                <div id="1"class="hidden_content" style="display: none;">
+                    <p><span>NUMERO:</span> 555-76958</p>
+                    <p><span>WEB:</span> siteinternet.fr</p>
+                    <p><span>RESEAU SOCIAUX:</span> Lifeinvader.com/lifeInvader</p>
+                    <p><span>PDG:</span> Jean Untel (555-785548)</p> 
+                </div>
+            </article>
+            <p class="description1 description2">CLIQUEZ POUR AVOIR TOUTES LES INFORMATIONS,</p>
+            <p class="description1 description2">SOYEZ AU COURANT DE CHAQUE MAGASIN OUVERT EN VILLE</p>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script type="application/javascript">
+        function hideOnClick(i) {
+            var x = document.getElementById(i);
+            var y = document.getElementById('article' + i);
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                y.style.height = "20em"
+            } else {
+                x.style.display = "none";
+                y.style.height = "";
+            }
+        }
+        $(".changed").click(function(){
+            var HTMLclass = this.className;
+            console.log(HTMLclass);
+            if(HTMLclass === "changed optionMenu___Justice") {
+                $(".nomEntreprise").text("Avocat");
+                $(".typeEntreprise").text("Justice");
+                $(".motcleEntrepriseChanged").text(" avocat, défense, justice, plainte");
+                $(".logoEntreprise").attr("src", "images/avocat.jpg");
+            } else if(HTMLclass === "changed optionMenu___Habitation") {
+                $(".nomEntreprise").text("Agence immo");
+                $(".typeEntreprise").text("Habitatiton");
+                $(".motcleEntrepriseChanged").text(" logement, location, achat");
+                $(".logoEntreprise").attr("src", "images/immo.png");
+            } else if(HTMLclass === "changed optionMenu___Santé") {
+                $(".nomEntreprise").text("St hospital");
+                $(".typeEntreprise").text("Santé");
+                $(".motcleEntrepriseChanged").text(" hopital, medecin, urgence");
+                $(".logoEntreprise").attr("src", "images/stfiacre.png");
+            }
+        })
+    </script>
+{% endblock %}

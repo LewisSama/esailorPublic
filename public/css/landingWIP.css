@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Concept;
+    src: url('/fonts/ConceptSolid-Gmwm.otf');
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    
+}
+
+@font-face{
+    font-family: 'netLulo';
+    src: url("/fonts/Net-Lulo-Clean.ttf") format("truetype");
+
+}
+@font-face{
+    font-family: 'futura';
+    src: url("/fonts/futura/futura_medium_bt.ttf") format("truetype");
+
+}
+body {
+    background-color: #6A8AC5;
+    display: flex;
+    user-select: none;
+}
+
+#WIP, #exemple {
+    background-color: #6A8AC5;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+}
+#exemple {
+    background: #6A8AC5;
+}
+
+#WIP {
+    background-image: url('/images/landing-background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+
+.WIP__text {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 50vw;
+    height: 100vh;
+    font-size: 0.7vw;
+}
+.WIP__title {
+    font-family: netLulo;
+    font-size: 3vw;
+    letter-spacing: 0.2em;
+    color:white;
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.62);
+}
+.WIP__description {
+    font-family: futura;
+    color: white;
+    font-weight:500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1vh;
+    width:50%; 
+    letter-spacing: 0.1em;
+    font-size: 1.1vw;
+}
+
+.goToRegister{
+    position: relative;
+    color: white;
+    top: 50vh;
+    letter-spacing: 0.1em;
+    font-size: 1.1vw;
+    font-weight:500;
+    background-color: #0e3457;
+    padding: 1vw;
+    text-decoration: none;
+}
+.goToRegister:hover {
+    background-color: #ffc200;
+    text-decoration: underline;
+}
+.esailor__logo {
+    width: 20vw;
+    margin-top: 6vh;    
+}
+.entreprise {
+    height: 8vw;
+    width: 22vw;
+    margin-left: 13vw;
+    text-align: left;
+}
+.logoEntreprise {
+    height: 14vh;
+    width: 8vw;
+    float: left;
+    margin-top: -1.5em;
+}
+
+.entreprise__status {
+    left: 21vw;
+    border: solid 2.5px white;
+}
+.nomEntreprise {
+    font-size: 1.5vw;
+}
+.typeEntreprise {
+    font-size: 1.2vw;
+    margin-bottom: 1vh;
+}
+.motCleEntreprise {
+    margin-left: 5vw;
+    margin-bottom: 1.75em;
+    font: 1.1vw;
+    width: 70%;
+}
+.card{
+    height: 45vh;
+}
+.description1 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.7vw;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: white;
+}
+.description2 {
+
+}
+
+#header_search {
+    margin-top: 6vh;
+}
+
+#WIPsearch{
+    width: 30vw;
+    height: 2em;
+    border-radius: 100px;
+    border-color: grey;
+    padding-left: 35px;
+}
+
+.optionmenu {
+    margin-top: 5vh;
+}
+.optionMenu___Justice {
+    position: absolute;
+    z-index: 1;
+    left: 61.9vw;
+    width: 8.2vw;
+    height: 2.6vw;
+    opacity: 0.5;
+}
+.optionMenu___Habitation {
+    position: absolute;
+    z-index: 1;
+    left: 70.1vw;
+    width: 8.2vw;
+    height: 2.6vw;
+    opacity: 0.5;
+}
+.optionMenu___Santé {
+    position: absolute;
+    z-index: 1;
+    left: 78.3vw;
+    width: 9.8vw;
+    height: 2.6vw;
+    opacity: 0.5;
+}
+.motcleEntrepriseChanged {
+    font-weight: normal;
+    margin-left: 0.1vw;
+}
+

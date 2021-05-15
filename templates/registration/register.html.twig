@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/inscription.css">      
+{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+
+    <h1 class="register_title">Inscription</h1>
+
+    {{ form_start(registrationForm, {'attr': {'class': 'form__entreprise'}}) }}
+    <div>
+        {{ form_label(registrationForm.username, 'Nom de l\'entreprise*')}}
+        {{ form_errors(registrationForm.username)}}
+        {{ form_widget(registrationForm.username)}}
+        {{ form_help(registrationForm.username)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.plainPassword, 'Mot de passe*')}}
+        {{ form_errors(registrationForm.plainPassword)}}
+        {{ form_widget(registrationForm.plainPassword)}}
+        {{ form_help(registrationForm.plainPassword)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.entrepriseCategory, 'Catégorie*')}}
+        {{ form_errors(registrationForm.entrepriseCategory)}}
+        {{ form_widget(registrationForm.entrepriseCategory)}}
+        {{ form_help(registrationForm.entrepriseCategory)}}
+    </div>
+    <div>
+        {{ form_label(registrationForm.logo, 'logo* (au format carré)')}}
+        {{ form_errors(registrationForm.logo)}}
+        {{ form_widget(registrationForm.logo)}}
+        {{ form_help(registrationForm.logo)}}
+    </div>
+
+    <div class="form__entreprise__description">
+        {{ form_label(registrationForm.description, 'Courte description de l\'entreprise* (4,5 mots)')}}
+        {{ form_errors(registrationForm.description)}}
+        {{ form_widget(registrationForm.description, {'attr': {'class': 'entreprise__description'}})}}
+        {{ form_help(registrationForm.description)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.is_alwaysOpen, 'L\'entreprise a besoin d\'une annotation ouvert/fermé')}}
+        {{ form_errors(registrationForm.is_alwaysOpen)}}
+        {{ form_widget(registrationForm.is_alwaysOpen, {'attr': {'class': 'is_open'}})}}
+        {{ form_help(registrationForm.is_alwaysOpen)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.keyWord, 'Mot clé séparé par un ; *')}}
+        {{ form_errors(registrationForm.keyWord)}}
+        {{ form_widget(registrationForm.keyWord)}}
+        {{ form_help(registrationForm.keyWord)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.corpNumber, 'Numéro de l\'entreprise*')}}
+        {{ form_errors(registrationForm.corpNumber)}}
+        {{ form_widget(registrationForm.corpNumber)}}
+        {{ form_help(registrationForm.corpNumber)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.ceoName, 'Nom du dirigeant')}}
+        {{ form_errors(registrationForm.ceoName)}}
+        {{ form_widget(registrationForm.ceoName)}}
+        {{ form_help(registrationForm.ceoName)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.ceoNumber, 'Numéro du dirigeant')}}
+        {{ form_errors(registrationForm.ceoNumber)}}
+        {{ form_widget(registrationForm.ceoNumber)}}
+        {{ form_help(registrationForm.ceoNumber)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.ceoMail, 'Mail du dirigeant (ex: nomRP@IDDiscord.com)')}}
+        {{ form_errors(registrationForm.ceoMail)}}
+        {{ form_widget(registrationForm.ceoMail)}}
+        {{ form_help(registrationForm.ceoMail)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.webSite, 'Lien de votre site internet (discord, site internet...')}}
+        {{ form_errors(registrationForm.webSite)}}
+        {{ form_widget(registrationForm.webSite)}}
+        {{ form_help(registrationForm.webSite)}}
+    </div>
+
+    <div>
+        {{ form_label(registrationForm.RIB, 'Numéro de compte')}}
+        {{ form_errors(registrationForm.RIB)}}
+        {{ form_widget(registrationForm.RIB)}}
+        {{ form_help(registrationForm.RIB)}}
+    </div>
+    <div class="register__emplacementlogo">
+        {{ form_label(registrationForm.localisationLogo, 'Emplacement de votre entreprise')}}
+        <a class="linkToDownload" href="/downloads/map_esailor.rar">Template à respecter</a>
+        {{ form_errors(registrationForm.localisationLogo)}}
+        {{ form_widget(registrationForm.localisationLogo)}}
+        {{ form_help(registrationForm.localisationLogo)}}
+    </div>
+    <div>
+        
+        {{ form_label(registrationForm.localisation, 'Adresse de votre entreprise (ou quartier)')}}
+        {{ form_errors(registrationForm.localisation)}}
+        {{ form_widget(registrationForm.localisation)}}
+        {{ form_help(registrationForm.localisation)}}
+    </div>
+    <button type="submit" class="btn_inscription">Valider</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}

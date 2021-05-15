@@ -1,0 +1,66 @@
+.entreprise {
+    height: 10%;
+    width: 32%;
+    background-color: #c7d3e9;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    color: #2f446b;
+}
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 86%;
+    margin:7em;
+    margin-top: 5em;
+}
+
+.logoEntreprise {
+    height: 150px;
+    width: 180px;
+    float: left;
+    margin-top: -1.5em;
+}
+.nomEntreprise {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -0.5em;
+}
+
+.typeEntreprise {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 10px;
+
+}
+.motCleEntreprise {
+    margin-bottom: 1.75em;
+    width: 95%;
+}
+
+.hidden_content {
+    display: none;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.entreprise__status {
+    position: relative;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0;
+    top: -7.5px;
+    height: 22px;
+    width: 22px;
+    left: 97%;
+    z-index: 1;
+}
+span {
+    font-weight: bold;
+}
+.registerButton {
+    background-color: lightcoral;
+    font-size: 2em;
+}

@@ -1,0 +1,152 @@
+.entreprise {
+    height: 10%;
+    width: 32%;
+    background-color: #c7d3e9;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    color: #2f446b;
+}
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 86%;
+    margin:7em;
+    margin-top: 5em;
+}
+
+.logoEntreprise {
+    height: 150px;
+    width: 180px;
+    float: left;
+    margin-top: -1.5em;
+}
+.nomEntreprise {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -0.5em;
+    letter-spacing: 0.08em;
+}
+
+.typeEntreprise {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 10px;
+
+}
+.motCleEntreprise {
+    margin-left: 10em;
+    margin-bottom: 1.75em;
+    width: 60%;
+}
+
+.hidden_content {
+    display: none;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.entreprise__status {
+    position: relative;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0;
+    top: -7.5px;
+    height: 22px;
+    width: 22px;
+    left: 97%;
+    z-index: 1;
+}
+span {
+    font-weight: bold;
+}
+.registerButton {
+    position: relative;
+    top: 2em;
+    left: 24vw;
+    padding: 0.5em;
+    border:1px solid lightgray;
+    border-radius: 50px;
+    background-color: lightcoral;
+    color: black;
+    font-size: 2em;
+    margin-top: 7em;
+    text-decoration: none;
+    box-shadow: 5px 5px 4px -1px #5B5B5B;
+}
+.registerButton:active {
+    box-shadow: inset 5px 5px 4px -1px #5B5B5B;
+}
+
+.WIP {
+    position: relative;
+    right: 12em;
+    width: 20vw;
+    height: 40vh;   
+}
+.explication1{
+    position: absolute;
+    top: 15em;
+    left: 3em;
+    z-index: 10;
+    display: flex;
+}
+.text_explication1 {
+    position: relative;
+    top: 5em;
+    width: 15em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(105, 10, 10);
+}   
+.arrow1 {
+    transform: rotate(-45deg);
+    height: 7.5vh;
+    width: 15vw;
+}
+.explication2{
+    position: absolute;
+    top: 35em;
+    right: 2em;
+    z-index: 10;
+    display: flex;
+}
+.text_explication2 {
+    position: relative;
+    top: 1em;
+    width: 15em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(105, 10, 10);
+}   
+.arrow2 {
+    transform: rotate(180deg);
+    height: 7.5vh;
+    width: 15vw;
+}
+.explication3{
+    position: absolute;
+    top: 45em;
+    left: 2em;
+    z-index: 10;
+    display: flex;
+}
+.text_explication3 {
+    position: relative;
+    top: 1em;
+    width: 15em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(105, 10, 10);
+}   
+.arrow3 {
+    position: relative;
+    top: 6em;
+    height: 7.5vh;
+    width: 15vw;
+}

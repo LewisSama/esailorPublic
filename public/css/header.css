@@ -1,0 +1,80 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    
+}
+html {
+    font-family: 'Roboto';
+}
+#header__title {
+    text-align: center;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+#logoEsailor {
+    height: 75px;
+    width: 375px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#top__header {
+    width: 100%;
+    background-color: #6a8ac5;
+    margin: 0;
+    height: 10em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#header__searchBar {
+    width: 50em;
+    height: 2em;
+    border-radius: 100px;
+    border-color: grey;
+    padding-left: 35px;
+}
+
+#header_search {
+    width: 100%;
+}
+
+#header__searchIcon {
+    height:20px;
+    width: 20px;
+    position: absolute;
+    padding: 10px;
+    
+}
+.header__farm {
+    width: 2em;
+}
+#header__nav {
+    background-color: #e6c800;
+    margin: 0;
+    height: 4em;
+    font-size: 0.9em;
+}
+
+#header__nav > ul {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    line-height: 3.5;
+    background: white;
+    position: relative;
+    margin-block-start: 0;
+    top: 0.4em;
+    padding-left: 12em;
+    padding-right: 12em;
+}
+#header__nav > ul :hover {
+    background-color: #c7d3e9;
+}
+
+.header__nav__category {
+    list-style-type: none;
+    padding-left: 2em;
+    padding-right: 2em;
+}
